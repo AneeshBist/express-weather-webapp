@@ -12,6 +12,9 @@
 html{
     font-size: 1rem;
 }
+body{
+    height: 100vh
+}
 .row{
     margin: 0;
 }
@@ -39,18 +42,68 @@ html{
 .hm-title {
     font-size: 1.5rem;
 }
-h1 {
-    color: blue;
-}
+
 .bg-w{
     height: 10%;
+}
+.header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header-left p {
+    font-size: 2rem;
+}
+.header-left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.header-left .txt-clr{
+color: var(--main-color);
+}
+.header-left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.header-left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 2rem;
+    background-color: var(--main-bg);
+}
+footer p{
+    margin: 0;
+    color: #fff;
     text-align: center;
-    background-color: #fff;
+    line-height: 3rem;
+    font-size: 1.4rem;
 }
 
+/* responsive */
+@media(max-width: 768px){
+    .header-left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .header-right{
+        height: auto;
+        margin: 3rem 0;
+    }
+}
