@@ -82,6 +82,9 @@ color: var(--main-color);
     justify-content: center;
     align-items: flex-start;
 }
+.header-right figure img{
+    filter: drop-shadow(0 0.5rem 1rem var(--main-color));
+}
 footer{
     position: fixed;
     bottom: 0;
