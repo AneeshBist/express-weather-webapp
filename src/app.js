@@ -7,23 +7,28 @@ const port = 8000;
 //public static path
 const static_path = path.join(__dirname, "../public");
 
+app.set("view engine", "hbs");
 app.use(express.static(static_path));
 
 //routing
 app.get("", (req, res) => {
-  res.send("welcome to The Weather Website");
+  res.render("index");
+  //res.send("welcome to The Weather Website");
 });
 
 app.get("/about", (req, res) => {
-  res.send("welcome to About section of the Website");
+  res.render("about");
+  //res.send("welcome to About section of the Website");
 });
 
 app.get("/weather", (req, res) => {
-  res.send("welcome to Weather section of the Website");
+  res.render("weather");
+  //res.send("welcome to Weather section of the Website");
 });
 
 app.get("*", (req, res) => {
-  res.send("Oopps !!! 404 error page");
+  res.render("404error");
+  //res.send("Oopps !!! 404 error page");
 });
 
 app.listen(port, () => {
