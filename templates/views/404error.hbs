@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="row">
+                    <!-- Left Side -->
+                    <div class="col-12 header-left align-items-center">
+                        <figure class="errimg text-center">
+                            <img src="images/error.jpg" alt="404 not found" class="img-fluid">
+                        </figure>
+                        <p class="hm-title"> Welcome to Weather App by Aneesh</p>
+                        <h1>{{errormsg}}</h1>
+                        <a href="/"><button class="btn">Go Back</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    {{>footer}}
+</body>
+
+</html>
