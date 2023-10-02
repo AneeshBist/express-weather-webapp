@@ -86,10 +86,28 @@ color: var(--main-color);
     filter: drop-shadow(0 0.5rem 1rem var(--main-color));
 }
 
+/* Weather Page */
+.temp-form{
+    width: 80%;
+    position: relative;
+    margin: 0.7rem auto 0.5rem;
+}
+
+.temp-form input[type="text"]{
+    width: 100%;
+    padding: 1rem 5rem 1rem 1rem;
+    background-color: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
 .temp-info{
     width:400px;
     margin: auto;
-    min-height: 20rem;
+    min-height: 7rem;
     background-color: #323544;
     border-radius: 1rem;
     font-family: "Roboto",sans-serif;
@@ -97,6 +115,7 @@ color: var(--main-color);
 .top-layer{
     width: 100%;
     height: 20%;
+    position: relative;
     background-color: #2d303d;
     display: flex;
     justify-content: space-between;
@@ -107,7 +126,7 @@ color: var(--main-color);
 .top-layer p{
     color: #fff;
     font-weight: 300;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.3rem;
 }
 
@@ -120,7 +139,7 @@ color: var(--main-color);
 }
 
 .main-layer #city-name{
-    padding:2rem 0;
+    padding:1rem 0;
     color: #bfc1c8;
     font-weight: 300;
     font-size: 2rem;
@@ -134,18 +153,20 @@ color: var(--main-color);
 
 .main-layer .middle-layer p,
 .main-layer .middle-layer .fa{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 900;
 }
 .fa{
     color: #009ad8;
 }
-sup{
-    
-    font-size: 6rem;
+sup{  
+    font-size: 3rem;
     margin-top: -2rem;
 }
-
+.data-hide{
+    visibility: visible;
+    transition: all 0.3s linear;
+}
 /*error page*/
 .errimg img{
     width:50%;
