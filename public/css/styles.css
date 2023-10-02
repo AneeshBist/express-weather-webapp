@@ -129,11 +129,11 @@ color: var(--main-color);
 .main-layer .middle-layer{
     display: flex;
     justify-content: space-around;
-    color: #fff;
+  color: #fff;
 }
 
-.main-layer .main-layer p,
-.main-layer .main-layer .fa{
+.main-layer .middle-layer p,
+.main-layer .middle-layer .fa{
     font-size: 7rem;
     font-weight: 900;
 }
@@ -141,6 +141,7 @@ color: var(--main-color);
     color: #009ad8;
 }
 sup{
+    
     font-size: 6rem;
     margin-top: -2rem;
 }
