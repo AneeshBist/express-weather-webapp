@@ -182,7 +182,7 @@ sup{
     margin-top: -2rem;
 }
 .data-hide{
-    visibility: visible;
+    visibility: hidden;
     transition: all 0.3s linear;
 }
 /*error page*/
