@@ -2,7 +2,7 @@ const submitBtn = document.getElementById("submit-btn");
 const cityName = document.getElementById("city-name");
 
 const cityOutput = document.getElementById("city-output");
-const temp = document.getElementById("temp");
+const temp = document.getElementById("temp-val");
 const tempStats = document.getElementById("temp-stats");
 
 const dataHide = document.querySelector(".middle-layer");
@@ -21,7 +21,7 @@ const getInfo = async (event) => {
       const arrData = [data];
 
       cityOutput.innerText = `${arrData[0].name}, ${arrData[0].sys.country}`;
-      temp.innerText = `${arrData[0].main.temp}C`;
+      temp.innerText = `${arrData[0].main.temp}`;
       tempStats.innerText = arrData[0].weather[0].main;
 
       if (tempStats === "Clear") {

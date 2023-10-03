@@ -171,15 +171,14 @@ color: var(--main-color);
 
 .main-layer .middle-layer p,
 .main-layer .middle-layer .fa{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 900;
 }
 .fa{
     color: #009ad8;
 }
 sup{  
-    font-size: 3rem;
-    margin-top: -2rem;
+    font-size: 1.7rem;
 }
 .data-hide{
     visibility: hidden;
