@@ -155,7 +155,8 @@ color: var(--main-color);
     padding: 2rem;
 }
 
-.main-layer #city-name{
+.main-layer #city-name,
+.main-layer #city-output{
     padding:1rem 0;
     color: #bfc1c8;
     font-weight: 300;
